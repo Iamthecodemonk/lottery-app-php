@@ -1,0 +1,22 @@
+RewriteEngine On
+
+# Allow direct access to existing files and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Ensure static files (CSS, JS, images) are not rewritten
+RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|jpeg|gif|ico|woff|woff2|ttf|svg)$ [NC]
+
+# Rewrite all other requests to index.php
+RewriteRule ^(.*)$ index.php?route=$1 [L,QSA]
+
+# Explicitly set MIME types (for Apache)
+<IfModule mod_mime.c>
+    AddType text/css .css
+    AddType application/javascript .js
+</IfModule>
+<Files ".env">
+    Order allow,deny
+    Deny from all
+</Files>
+

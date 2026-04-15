@@ -1,0 +1,36 @@
+{
+  "name": "Blue Extra Lotto",
+  "short_name": "Blue Extra",
+  "start_url": "/lt/",
+  "scope": "/lt/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "description": "Blue Extra Lotto dashboard for agents and admins.",
+  "icons": [
+    {
+      "src": "/lt/public/assets/img/logo_1.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/lt/public/assets/img/logo_1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/lt/public/assets/img/logo_1.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/lt/public/assets/img/logo_1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

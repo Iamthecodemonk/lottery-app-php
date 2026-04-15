@@ -1,0 +1,48 @@
+[27-Mar-2026 05:44:33 UTC] PHP Fatal error:  Uncaught Exception: Failed to delete game: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`blueextra_loto`.`bets`, CONSTRAINT `bets_ibfk_2` FOREIGN KEY (`game_id`) REFERENCES `games` (`id`)) in /home/blueextra/public_html/lt/models/Game.php:105
+Stack trace:
+#0 /home/blueextra/public_html/lt/services/GameService.php(201): Game\Game::delete()
+#1 /home/blueextra/public_html/lt/controller/Game/gamepost.php(25): GameService\GameService::DeleteGame()
+#2 [internal function]: {closure}()
+#3 /home/blueextra/public_html/lt/_Helpers.php(1161): call_user_func()
+#4 /home/blueextra/public_html/lt/controller/Game/gamepost.php(26): _Helpers\RouteHelper::post()
+#5 [internal function]: GameService_DeleteGame()
+#6 /home/blueextra/public_html/lt/_Helpers.php(1218): call_user_func()
+#7 /home/blueextra/public_html/lt/index.php(165): _Helpers\RouteHelper::loadRoute()
+#8 {main}
+  thrown in /home/blueextra/public_html/lt/models/Game.php on line 105
+[27-Mar-2026 05:44:37 UTC] PHP Fatal error:  Uncaught Exception: Failed to delete game: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`blueextra_loto`.`bets`, CONSTRAINT `bets_ibfk_2` FOREIGN KEY (`game_id`) REFERENCES `games` (`id`)) in /home/blueextra/public_html/lt/models/Game.php:105
+Stack trace:
+#0 /home/blueextra/public_html/lt/services/GameService.php(201): Game\Game::delete()
+#1 /home/blueextra/public_html/lt/controller/Game/gamepost.php(25): GameService\GameService::DeleteGame()
+#2 [internal function]: {closure}()
+#3 /home/blueextra/public_html/lt/_Helpers.php(1161): call_user_func()
+#4 /home/blueextra/public_html/lt/controller/Game/gamepost.php(26): _Helpers\RouteHelper::post()
+#5 [internal function]: GameService_DeleteGame()
+#6 /home/blueextra/public_html/lt/_Helpers.php(1218): call_user_func()
+#7 /home/blueextra/public_html/lt/index.php(165): _Helpers\RouteHelper::loadRoute()
+#8 {main}
+  thrown in /home/blueextra/public_html/lt/models/Game.php on line 105
+[27-Mar-2026 10:32:49 UTC] Update SQL: UPDATE `agents` SET `suspendAgent` = :set_param_1 WHERE `id` = :where_param_2
+[27-Mar-2026 10:32:49 UTC] Update Bindings: {":set_param_1":0,":where_param_2":"AG5693"}
+[27-Mar-2026 10:32:49 UTC] Rows affected: 0
+[27-Mar-2026 10:32:56 UTC] Update SQL: UPDATE `agents` SET `suspendAgent` = :set_param_1 WHERE `id` = :where_param_2
+[27-Mar-2026 10:32:56 UTC] Update Bindings: {":set_param_1":0,":where_param_2":"AG5693"}
+[27-Mar-2026 10:32:56 UTC] Rows affected: 0
+[27-Mar-2026 10:33:10 UTC] Update SQL: UPDATE `agents` SET `suspendAgent` = :set_param_1 WHERE `id` = :where_param_2
+[27-Mar-2026 10:33:10 UTC] Update Bindings: {":set_param_1":0,":where_param_2":"AG2753"}
+[27-Mar-2026 10:33:10 UTC] Rows affected: 0
+[27-Mar-2026 10:33:24 UTC] Update SQL: UPDATE `agents` SET `suspendAgent` = :set_param_1 WHERE `id` = :where_param_2
+[27-Mar-2026 10:33:24 UTC] Update Bindings: {":set_param_1":0,":where_param_2":"AG2753"}
+[27-Mar-2026 10:33:24 UTC] Rows affected: 0
+[27-Mar-2026 10:35:25 UTC] Update SQL: UPDATE `agents` SET `suspendAgent` = :set_param_1 WHERE `id` = :where_param_2
+[27-Mar-2026 10:35:25 UTC] Update Bindings: {":set_param_1":0,":where_param_2":"AG2753"}
+[27-Mar-2026 10:35:25 UTC] Rows affected: 0
+[29-Mar-2026 13:13:17 UTC] Update SQL: UPDATE `agents` SET `suspendAgent` = :set_param_1 WHERE `id` = :where_param_2
+[29-Mar-2026 13:13:17 UTC] Update Bindings: {":set_param_1":0,":where_param_2":"AG2753"}
+[29-Mar-2026 13:13:17 UTC] Rows affected: 0
+[29-Mar-2026 13:13:20 UTC] Update SQL: UPDATE `agents` SET `suspendAgent` = :set_param_1 WHERE `id` = :where_param_2
+[29-Mar-2026 13:13:20 UTC] Update Bindings: {":set_param_1":0,":where_param_2":"AG2753"}
+[29-Mar-2026 13:13:20 UTC] Rows affected: 0
+[29-Mar-2026 13:13:22 UTC] Update SQL: UPDATE `agents` SET `suspendAgent` = :set_param_1 WHERE `id` = :where_param_2
+[29-Mar-2026 13:13:22 UTC] Update Bindings: {":set_param_1":0,":where_param_2":"AG2753"}
+[29-Mar-2026 13:13:22 UTC] Rows affected: 0
